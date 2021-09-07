@@ -4,7 +4,10 @@ from math import sqrt
 
 
 def prime(w):
-    for q in range(2,w):
+    
+    if w >= 2: print(2)
+        
+    for q in range(3,w, 2):
         for b in range (2, int(sqrt(q))+1):
             if q % b == 0 :
                 break
